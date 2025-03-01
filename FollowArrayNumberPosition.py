@@ -26,11 +26,11 @@ print("Изберете число:")
 number = is_int_and_is_in_array(number, nums_arr) #проверяваме дали числото е цяло и се съдържа в списъка
 
 nums_list = nums_arr.tolist() #записваме масива в списък
-print(*nums_list)
+print(*nums_list, sep=", ")
 print("Първоначална позиция на числото {}: {}".format(number, nums_list.index(int(number)) + 1))
 
 random.shuffle(nums_arr) #разбъркваме масива
 
 shuf_nums_list = nums_arr.tolist() #записваме разбъркания масив в списък
-print(*shuf_nums_list)
+print(*shuf_nums_list, sep=", ")
 print("Позиция на числото {} след разбъркване: {}".format(number, shuf_nums_list.index(int(number)) + 1))
